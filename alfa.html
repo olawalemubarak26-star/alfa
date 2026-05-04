@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Conf Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#0b0220] text-white font-mono overflow-hidden relative">
+
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0b0220] via-[#14052f] to-[#2d0a52]"></div>
+
+  <!-- Vertical lines -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:60px_100%]"></div>
+
+  <!-- Decorative circles -->
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 border-[18px] border-[#f28b82] rounded-full opacity-70"></div>
+  <div class="absolute bottom-20 left-32 w-64 h-64 border-[14px] border-[#f28b82] rounded-full opacity-60"></div>
+  <div class="absolute top-12 right-20 w-40 h-20 border-[10px] border-[#c9a8ff] rounded-full border-l-0 border-b-0 rotate-12 opacity-50"></div>
+  <div class="absolute bottom-52 right-64 w-36 h-36 border border-[#8f6ccf] rounded-full opacity-20"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-10">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2 mb-8">
+      <div class="w-6 h-6 bg-[#f28b82] rounded-md rotate-45"></div>
+      <span class="text-lg font-bold">Coding Conf</span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-3xl md:text-5xl font-bold text-center leading-tight max-w-3xl">
+      Your Journey to Coding Conf <br />
+      2025 Starts Here!
+    </h1>
+
+    <p class="mt-4 text-gray-300 text-center text-sm md:text-base">
+      Secure your spot at next year’s biggest coding conference.
+    </p>
+
+    <!-- Form -->
+    <form class="mt-10 w-full max-w-md space-y-5">
+
+      <!-- Upload -->
+      <div>
+        <label class="block mb-2 text-sm">Upload Avatar</label>
+        <div class="border border-dashed border-gray-500 rounded-xl p-6 bg-white/5 text-center cursor-pointer hover:bg-white/10 transition">
+          <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-[#f28b82]/20 flex items-center justify-center text-[#f28b82] text-xl">
+            ⬆
+          </div>
+          <p class="text-sm text-gray-300">Drag and drop or click to upload</p>
+        </div>
+        <p class="text-xs text-gray-400 mt-2">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+
+      <!-- Full Name -->
+      <div>
+        <label class="block mb-2 text-sm">Full Name</label>
+        <input
+          type="text"
+          class="w-full px-4 py-3 rounded-xl bg-white/5 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#f28b82]"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block mb-2 text-sm">Email Address</label>
+        <input
+          type="email"
+          placeholder="example@email.com"
+          class="w-full px-4 py-3 rounded-xl bg-white/5 border border-gray-500 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#f28b82]"
+        />
+      </div>
+
+      <!-- GitHub -->
+      <div>
+        <label class="block mb-2 text-sm">GitHub Username</label>
+        <input
+          type="text"
+          placeholder="@yourusername"
+          class="w-full px-4 py-3 rounded-xl bg-white/5 border border-gray-500 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#f28b82]"
+        />
+      </div>
+
+      <!-- Button -->
+      <button
+        type="submit"
+        class="w-full bg-[#f28b82] text-black font-bold py-3 rounded-xl hover:opacity-90 transition"
+      >
+        Generate My Ticket
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
